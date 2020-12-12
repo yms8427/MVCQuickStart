@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.MVC.QuickStart", "BilgeAdam.MVC.QuickStart\BilgeAdam.MVC.QuickStart.csproj", "{9F655655-7D04-4560-9166-91D0B71C096B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Data", "BilgeAdam.Data\BilgeAdam.Data.csproj", "{D7F2D50F-2B0E-4B76-A601-2B486A7F2F8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Contracts", "BilgeAdam.Contracts\BilgeAdam.Contracts.csproj", "{695158D4-D68A-4810-AA43-E82A5EF0DFA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Services", "BilgeAdam.Services\BilgeAdam.Services.csproj", "{DD4BF564-05A6-4A72-A3C2-FBE0E23BFB15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2448E929-78B0-4018-BEB3-75E83F73E013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Integration.Tests", "BilgeAdam.Integration.Tests\BilgeAdam.Integration.Tests.csproj", "{6FB4E538-C6D3-4D8A-8110-E6B50D26497A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F655655-7D04-4560-9166-91D0B71C096B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F655655-7D04-4560-9166-91D0B71C096B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F655655-7D04-4560-9166-91D0B71C096B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F655655-7D04-4560-9166-91D0B71C096B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F2D50F-2B0E-4B76-A601-2B486A7F2F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F2D50F-2B0E-4B76-A601-2B486A7F2F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F2D50F-2B0E-4B76-A601-2B486A7F2F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F2D50F-2B0E-4B76-A601-2B486A7F2F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695158D4-D68A-4810-AA43-E82A5EF0DFA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695158D4-D68A-4810-AA43-E82A5EF0DFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695158D4-D68A-4810-AA43-E82A5EF0DFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695158D4-D68A-4810-AA43-E82A5EF0DFA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD4BF564-05A6-4A72-A3C2-FBE0E23BFB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD4BF564-05A6-4A72-A3C2-FBE0E23BFB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD4BF564-05A6-4A72-A3C2-FBE0E23BFB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD4BF564-05A6-4A72-A3C2-FBE0E23BFB15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB4E538-C6D3-4D8A-8110-E6B50D26497A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB4E538-C6D3-4D8A-8110-E6B50D26497A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB4E538-C6D3-4D8A-8110-E6B50D26497A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB4E538-C6D3-4D8A-8110-E6B50D26497A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FB4E538-C6D3-4D8A-8110-E6B50D26497A} = {2448E929-78B0-4018-BEB3-75E83F73E013}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FD91F69-7C9D-42E0-B3C5-3E30406E69D7}
+	EndGlobalSection
+EndGlobal

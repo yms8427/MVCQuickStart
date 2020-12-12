@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Gizlilik Politikası";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<h3>Kullanıcı Bilgileri</h3>
+<p>Uygulama kullanıcılarının bilgileri başka bir uygulama ile kullanıcının izni olmadan paylaşılmaz</p>
+
+@{ var rnd = new Random();}
+
+<ul class="list-group">
+    @for (int i = 0; i < 5; i++)
+    {
+        <li class="list-group-item">@rnd.Next(1, 100)</li>
+    }
+</ul>
+
+
+@section NavLink {
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Rules">Kurallar</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Terms">Kullanım Şartları</a>
+    </li>
+}

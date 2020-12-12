@@ -1,0 +1,16 @@
+﻿@model BilgeAdam.Contracts.ProductViewModel
+@{
+    ViewData["Title"] = "Ürün Detayı";
+}
+
+<div class="card">
+    <div class="card-header">
+        @Model.Id / @Model.Name
+    </div>
+    <div class="card-body">
+        <p class="fw-light">@Model.Price ₺</p>
+        <p class="fw-bold">@Model.Stock</p>
+        <small>@Model.Category</small>
+        <small>@Model.Company</small>
+    </div>
+</div>

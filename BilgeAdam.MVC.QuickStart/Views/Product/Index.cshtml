@@ -1,0 +1,55 @@
+﻿@using BilgeAdam.Contracts
+@model IEnumerable<ProductViewModel>
+@{
+    ViewData["Title"] = "Ürün Listesi";
+}
+<a class="btn btn-warning float-right" href="@Url.Action("Create", "Product")">Yeni Ürün Ekle</a>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ürün Kodu</th>
+            <th>Ürün Adı</th>
+            <th>Fiyatı</th>
+            <th>Stok</th>
+            <th>Tür</th>
+            <th>Firma</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.Stock</td>
+                <td>@product.Category</td>
+                <td>@product.Company</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<hr />
+<h3 class="display-4">Ürün Kartları</h3>
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header">
+                    @product.Id / @product.Name
+                </div>
+                <div class="card-body">
+                    <p class="fw-light">@product.Price ₺</p>
+                    <p class="fw-bold">@product.Stock</p>
+                    <small>@product.Category</small>
+                    <small>@product.Company</small>
+                    <hr />
+                    <a href="@Url.Action("Detail", "Product", new { id = product.Id })" class="btn btn-primary">Detay</a>
+                    @*<a asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id" class="btn btn-primary">Detay</a>*@
+                </div>
+            </div>
+        </div>
+    }
+</div>
