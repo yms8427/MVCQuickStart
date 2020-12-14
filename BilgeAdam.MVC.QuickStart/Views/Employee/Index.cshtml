@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Çalışan Sayfası";
+}
+<div id="app">
+    <h3 class="display-3">{{title}}</h3>
+    <table class="table table-bordered table-hover table-sm table-striped">
+        <thead>
+            <tr>
+                <th>Adı Soyadı</th>
+                <th>Doğum Tarihi</th>
+                <th>Ülke</th>
+                <th>Şehir</th>
+                <th>Telefon</th>
+                <th>İşe Başlama Tarihi</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="emp in employees">
+                <td>{{emp.fullName}}</td>
+                <td>{{emp.birthDate}}</td>
+                <td>{{emp.country}}</td>
+                <td>{{emp.city}}</td>
+                <td>{{emp.phone}}</td>
+                <td>{{emp.hireDate}}</td>
+                <td><button class="btn btn-primary btn-sm">Detay</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button class="btn btn-primary" v-on:click="add">Yeni</button>
+    </div>
+
+    <div id="newEmployee" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yeni Çalışan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="txtFirstName">Adı</label>
+                        <input type="email" class="form-control" id="txtFirstName" v-model="newEmployee.firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtLastName">Soyadı</label>
+                        <input type="email" class="form-control" id="txtLastName" v-model="newEmployee.lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtBirthDate">Doğum Tarihi</label>
+                        <input type="email" class="form-control" id="txtBirthDate" v-model="newEmployee.birthDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtCountry">Ülke</label>
+                        <input type="email" class="form-control" id="txtCountry" v-model="newEmployee.country">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtCity">Şehir</label>
+                        <input type="email" class="form-control" id="txtCity" v-model="newEmployee.city">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPhone">Telefon</label>
+                        <input type="email" class="form-control" id="txtPhone" v-model="newEmployee.phone">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary" v-on:click="save">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{ 
+    <script src="~/js/pages/employee/list.js"></script>
+}
